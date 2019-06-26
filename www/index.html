@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dice Games</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="phonegap.js"></script>
+    <script src='apis/jquery.js'></script>
+    <script src='apis/main.js'></script>
+	
+<script>
+
+
+</script>
+	
+    <style>
+		body {background-color: #003; color:#C90}
+		div#container {width:300px;text-align:center;margin:auto}
+		
+		p#results {text-align:left}
+		
+		div#overlay {width: 200px; height: 200px; margin: auto;  
+					border: 2px solid	white; padding:10px;}
+		
+span.dice{
+	
+	width:32px;
+	background:#F5F5F5;
+	border:#999 1px solid;
+	padding:10px;
+	margin:20px;
+}
+div#overlay img
+{
+
+background-color: white;
+
+}
+
+div#overlay p
+{
+padding:20px;
+color:white;
+font-weight:bold;
+}
+            	  
+	</style>
+  </head>
+  <div id='container'>
+   <h1>Shake me</h1>
+   
+    <div>
+	<button onclick="exitFromApp();">Exit</button>
+	<button onclick="startWatch();">Start</button>
+    
+   </div>
+   <br>
+    
+    <div id='overlay'>
+<div>
+<img src="d0.gif" name="mydice" id="mydice" >
+<img src="d0.gif" name="mydice2" id="mydice2">
+</div>
+<br>
+<span id="die1" class="dice">0</span>
+<span id="die2" class="dice">0</span>
+ <div> 
+ <br>
+	<p id ='messages'></p>  	
+    </div>
+    
+   </div>
+   <p id ='status'></p>
+   <p>By: <em>Bashir Ahmed</em></p> 
+   <div>
+  </body>
+</html>
